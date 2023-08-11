@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h1>Registro de Usuarios</h1>
+
+    <form action="" method="get">
+      <p>
+        <input type="text" placeholder="Nombre" name="nombre"/>
+      </p>
+      <p>
+        <input type="text" placeholder="Apellido" name="apellido"/>
+      </p>
+      <p>
+        <input type="email" placeholder="E-mail" name="correo"/>
+      </p>
+      <p>
+        <input 
+        type="date" 
+        placeholder="Fecha de nacimiento"
+        name="fecha_de_nacimiento"
+        />
+      </p>
+      <p>
+        <input type="number" placeholder="Ingresa tu DNI"/>
+      </p>
+      <p>
+        <input type="tel" placeholder="Telefono"/>
+      </p>
+      <p>
+        <input type="password" placeholder="Ingrese su contraseña"/>
+      </p>
+      <p>Genero</p>
+      <p>
+        <label for="masculino">
+          Masculino
+          <input id="masculino" type="radio" name="genero" value="masculino"/>
+        </label>
+      </p>
+      <p>
+        <label for="">
+          Femenino
+          <input type="radio" name="genero" value="femenino"/>
+        </label>
+      </p>
+      <p>
+        <label for="">
+          Otro
+          <input type="radio" name="genero"/>
+        </label>
+      </p>
+      <input type="text" value="PERU" readonly/>
+      <p>Paises</p>
+      <select name="" id="">
+        <option value="" disabled selected>Paises</option>
+        <option value="peru">Perú</option>
+        <option value="argentina">Argentina</option>
+        <option value="chile">Chile</option>
+        <option value="colombia">Colombia</option>
+      </select>
+      <p>Ciudades</p>
+      <select name="" id="">
+        <option value="lima">Lima</option>
+        <option value="iquitos">Iquitos</option>
+        <option value="tacna">Tacna</option>
+        <option value="chiclayoi">Chiclayo</option>
+        <option value="Arequipa">Arequipa</option>
+      </select>
+      <p>Cursos</p>
+      <p>JavaScript <input type="checkbox" name="curso_1"/></p>
+      <p>HTML<input type="checkbox" name="curso_2"/></p>
+      <p>CSS<input type="checkbox" name="curso_3"/></p>
+      <p>React JS<input type="checkbox" name="curso_4"/></p>
+      <p>Next JS <input type="checkbox" name="curso_5"/></p>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
